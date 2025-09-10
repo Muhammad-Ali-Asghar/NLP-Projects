@@ -109,13 +109,13 @@ svm_preds = svm_model.predict(X_test)
 print("SVM Accuracy:", accuracy_score(y_test, svm_preds))
 
 # Simplify Neural Network
-# Update num_classes to be based on the maximum value in y_train_split
+# Update num_classes 
 num_classes = y_train_split.max() + 1
 
-# Update the one-hot encoding to use the corrected num_classes
+# Update the one-hot encoding 
 y_train_nn = to_categorical(y_train_split, num_classes)
 y_val_nn = to_categorical(y_val_split, num_classes)
-
+# Model not trained due to insufficient RAM
 nn_model = Sequential([
     Dense(64, activation='relu', input_shape=(X_train_split.shape[1],)),
     Dropout(0.3),
