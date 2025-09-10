@@ -94,8 +94,4 @@ pip install -r requirements.txt
 
 ```
 
----
 
-## Author
-
-Developed by [Your Name].
