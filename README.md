@@ -53,7 +53,30 @@ This project performs topic modeling on a collection of news articles to identif
 
 ---
 
-## 4. Additional Notes
+## 4. News Category Classification
+
+### Description
+This project focuses on classifying news articles into predefined categories using machine learning models. The goal is to automate and enhance the process of news categorization.
+
+### Dataset
+- **news_category.csv**: A dataset containing news articles labeled with their respective categories.
+
+### Key Features
+- Data preprocessing and feature engineering.
+- Model training and evaluation using multiple algorithms.
+- Comparative analysis of model performance.
+
+### Results
+Our machine learning models achieved the following accuracy scores:
+- **Logistic Regression**: 88.08%
+- **Random Forest**: 86.55%
+- **Support Vector Machine (SVM)**: 89.11%
+
+These results highlight the effectiveness of machine learning in automating news categorization.
+
+---
+
+## 5. Additional Notes
 
 Each project is self-contained within its respective folder. To get started with any project, navigate to its folder and follow the instructions provided in the scripts or datasets.
 
