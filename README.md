@@ -91,13 +91,8 @@ To run these projects, ensure you have the following installed:
 Install the required libraries using:
 ```bash
 pip install -r requirements.txt
+
 ```
-
----
-
-## License
-
-This repository is licensed under the MIT License. Feel free to use and modify the code for your own projects.
 
 ---
 
