@@ -91,16 +91,15 @@ def train_and_evaluate(features, labels):
 
     return lr_accuracy, nb_accuracy
 
-if __name__ == "__main__":
-    # Load and preprocess data
-    file_path = "Dataset/Reviews.csv"
-    data = load_and_preprocess_data(file_path)
+# Load and preprocess data
+file_path = "Dataset/Reviews.csv"
+data = load_and_preprocess_data(file_path)
 
-    # Extract features using TF-IDF
-    tfidf_features = extract_features(data['review'], method='tfidf')
+# Extract features using TF-IDF
+tfidf_features = extract_features(data['review'], method='tfidf')
 
-    # Train and evaluate models
-    lr_accuracy, nb_accuracy = train_and_evaluate(tfidf_features, data['sentiment'])
+# Train and evaluate models
+lr_accuracy, nb_accuracy = train_and_evaluate(tfidf_features, data['sentiment'])
 
-    print(f"Logistic Regression Accuracy: {lr_accuracy}")
-    print(f"Naive Bayes Accuracy: {nb_accuracy}")
+print(f"Logistic Regression Accuracy: {lr_accuracy}")
+print(f"Naive Bayes Accuracy: {nb_accuracy}")
